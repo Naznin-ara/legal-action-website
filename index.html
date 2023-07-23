@@ -3,12 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <!-- tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Legal solution</title>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                coffee: '#B68C5A'
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <header class="max-w-screen-xl mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li><a href=""></a></li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <img src="images/logo2.png" alt="">
+            
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <div class="text-sm breadcrumbs">
+                    <ul class="text-[#707070] text-base gap-7">
+                      <li><a>Home</a></li> 
+                      <li><a>Service</a></li> 
+                      <li><a>Cases</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="navbar-end">
+              <a class="btn rounded-lg w-56 h-16 bg-coffee text-white">Free Consultation</a>
+            </div>
+          </div>
+    </header>
     
 </body>
 </html>
